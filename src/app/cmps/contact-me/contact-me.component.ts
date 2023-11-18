@@ -9,39 +9,35 @@ import { ContactService } from '../../service/contact.service';
 })
 export class ContactMeComponent implements OnInit, OnDestroy {
   contactMeForm: FormGroup = new FormBuilder().group({
-    firstName: ['',
+    firstName: [
+      '',
       [
         Validators.required,
         Validators.pattern(/^[\u0590-\u05FFa-zA-Z]+$/),
         Validators.minLength(2),
       ],
     ],
-    lastName: ['',
+    lastName: [
+      '',
       [
         Validators.required,
         Validators.pattern(/^[\u0590-\u05FFa-zA-Z]+$/),
         Validators.minLength(2),
       ],
     ],
-    email: ['',
+    email: [
+      '',
       [Validators.required, Validators.email, Validators.minLength(5)],
     ],
     phone: ['', [Validators.required, Validators.pattern(/^[\d\+\-]{8,}$/)]],
   });
 
-  //variables
   isLoaderActive: boolean = false;
-  wrongEmailAddress: boolean = false;
-  wrongPhoneNumber: boolean = false;
-  wrongFirstName: boolean = false;
-  wrongLastName: boolean = false;
   isSuccess: boolean = false;
   username: string = '';
   private subscription: Subscription[] = [];
 
-  constructor(
-    private contactService: ContactService
-  ) {}
+  constructor(private contactService: ContactService) {}
 
   ngOnInit() {
     this.subscription.push(
@@ -55,11 +51,17 @@ export class ContactMeComponent implements OnInit, OnDestroy {
           if (request) {
             this.isLoaderActive = false;
             this.clearForm();
-            this.isSuccess = true;}}));}
+            this.isSuccess = true;
+          }
+        }
+      )
+    );
+  }
 
   clearForm() {
     this.contactMeForm.reset();
   }
+
   shouldDisplayError(controlName: string): boolean | null {
     const control = this.contactMeForm.get(controlName);
     return control && control.invalid && (control.dirty || control.touched);
@@ -73,6 +75,7 @@ export class ContactMeComponent implements OnInit, OnDestroy {
       control.setValue(capitalizedValue, { emitEvent: false });
     }
   }
+
   onSubmit() {
     if (this.contactMeForm?.valid) {
       this.isLoaderActive = true;
@@ -80,7 +83,7 @@ export class ContactMeComponent implements OnInit, OnDestroy {
       this.contactService.sentContact(this.contactMeForm.value);
     }
   }
-
+  
   ngOnDestroy() {
     this.subscription.forEach((subscription) => {
       subscription.unsubscribe();

@@ -1,28 +1,16 @@
-import { AsyncPipe } from '@angular/common';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { ContactService } from '../../service/contact.service';
-import {
-  map,
-  of,
-  catchError,
-  BehaviorSubject,
-} from 'rxjs';
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-about-me',
   templateUrl: './about-me.component.html',
   styleUrls: ['./about-me.component.scss'],
 })
-export class AboutMeComponent implements OnInit {
-
-
-  constructor(
-    private fb: FormBuilder,
-    private ContactService: ContactService,
-  ) {}
-
-  ngOnInit() {
+export class AboutMeComponent  {
+  downloadCV(): void {
+    const resumePath = '../../../assets/files/dekel-resume.pdf'; // Adjust the path to match your actual file location
+    const link = document.createElement('a');
+    link.href = resumePath;
+    link.download = 'your_resume.pdf'; // You can set the desired name for the downloaded file
+    link.click();
   }
-
 }

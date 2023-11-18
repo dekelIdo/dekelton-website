@@ -1,7 +1,8 @@
 <div class="main-container">
+  <h2>About Me</h2>
   <div class="up-content">
-    <h2>About Me</h2>
     <div class="about-content">
+      <p class="p-content hello-title">Hello !</p>
       <p class="p-content">
         Im Dekel Ido, im 27 years old single. Im a Frontend developer with
         passion to development and fast learning.
@@ -9,17 +10,26 @@
         I love people and im a team
         player !
       </p>
-      <h5>My motto is - "Dreams without goals are just dreams"</h5>
       <hr />
-      <div class="image-container">
-        <img
-          class="my-image"
-        src="/assets/images/my-profile.png"
-          />
-          <!-- <div class="about-me-name">
-            Dekel Ido
-          </div> -->
-      </div>
+      <h5>My motto is - "Dreams without goals are just dreams"</h5>
     </div>
+    <div class="image-container">
+      <img
+        class="my-image"
+      src="/assets/images/my-profile.png"
+        />
+        <div class="card-my-name">Dekel Ido</div>
+        <hr>
+        <div class="job-name">Fronend Developer</div>
+        <div class="about-me-card-footer"> 
+          <!-- <img src="../../../assets/images/linkedin.svg" alt="">
+          <img src="../../../assets/images/github.svg" alt="">
+          <a routerLink="contact-me" ><img src="../../../assets/images/phone.svg" alt=""></a>
+          <a  href="https://www.facebook.com" target="_blank">
+            <img src="../../../assets/images/facebook.svg" alt="">
+          </a> -->
+          <button (click)="downloadCV()" class="resume-btn">Download Resume <img src="../../../assets/images/download-icon.png" alt=""></button>
+        </div>
+      </div>
   </div>
 </div>

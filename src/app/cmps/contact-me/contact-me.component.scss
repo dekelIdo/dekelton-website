@@ -3,6 +3,7 @@
 .main-container {
     background-color: $background-color;
     height: 100vh;
+
     .user-message {
         display: flex;
         align-items: center;
@@ -10,6 +11,8 @@
         color: #27be43;
         padding-bottom: 3px;
         font-weight: 600;
+        margin-bottom: 15px;
+        font-size: 1.1rem;
     }
 
     .contact-me-title {
@@ -32,7 +35,7 @@
         }
     }
 
-    .not-valid{
+    .not-valid {
         color: red;
         margin-block-start: -1em;
         margin-block-end: 1em;
@@ -94,6 +97,7 @@
             border-radius: 10px;
             border: none;
             height: 40px;
+
             &:hover {
                 background-color: #468051;
                 cursor: pointer;
@@ -107,6 +111,7 @@
         }
     }
 }
+
 .loader {
     inset: 0;
     margin: auto;

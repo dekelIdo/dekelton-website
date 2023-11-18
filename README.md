@@ -44,8 +44,8 @@ After sending the form the user get a message that the form sent successfully.
 <img width="937" alt="education-page" src="https://github.com/dekelIdo/dekelton-website/assets/109578899/f3bfa765-f739-458d-8636-d25fb999dba1">
 
 ## Responsive Design
+<img width="937" alt="responsive-design-mobile" src="https://github.com/dekelIdo/dekelton-website/assets/109578899/be8fc439-ffb1-433f-96da-b7ecd3fd9853">
 
-<img width="937" alt="mobile-view-responsive" src="https://github.com/dekelIdo/dekelton-website/assets/109578899/637cc4f1-1f60-4a39-a4a0-1ca6d7edd082">
 
 ### Installation
 

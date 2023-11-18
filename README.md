@@ -1,6 +1,6 @@
 # Dekelton
 
-My portfolio responsive website that I built, containing my CV [Here is my project link](https://dekelton.onrender.com/ "Dekelton link").
+My portfolio responsive website that I built, containing my CV - [Here is my project demo] (https://dekelton.onrender.com/ "Dekelton link").
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.1.
 <img width="937" alt="home-page" src="https://github.com/dekelIdo/dekelton-website/assets/109578899/62de2d1f-fcce-4324-83fc-e6f368956ac6">

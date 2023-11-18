@@ -1,15 +1,26 @@
 @import '../../../assets/scss-vars/variables.scss';
 
 .main-container {
-  background-color: $background-color;
   height: unset;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column-reverse;
+  background-color: $background-color;
   position: relative;
 
   @media (min-width: $breakpoint-small) {
+    height: 100vh;
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    height: unset;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    background-color: white;
+    flex-direction: row;
+    background: linear-gradient(to left, white 60%, $background-color 60%);
     height: 100vh;
   }
 
@@ -26,23 +37,16 @@
 
   .about-content {
     width: 80%;
+    display: flex;
+    flex-direction: column;
+    position: unset;
 
-    @media (min-width: $breakpoint-medium) {
+    @media (min-width: $breakpoint-large) {
       width: 700px;
-    }
-  }
-
-  h2 {
-    display: none;
-    font-size: 4rem;
-    text-align: center;
-    margin-block-end: 0;
-    color: #0050FF;
-    position: absolute;
-    top: 1%;
-
-    @media (min-width: $breakpoint-medium) {
-      display: Block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-15%, -50%);
     }
   }
 
@@ -78,7 +82,6 @@
     padding: 4px;
   }
 
-
   hr {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -86,16 +89,31 @@
   }
 }
 
-
 .image-container {
   display: flex;
   justify-content: center;
   background-color: #f4ece6;
   height: 500px;
   width: 350px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   flex-direction: column;
   margin: auto;
   margin-bottom: 30px;
+  position: unset;
+  transform: unset;
+
+  @media (min-width: $breakpoint-small) {
+    margin-bottom: auto;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    margin-bottom: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-120%, -50%);
+  }
 
   .card-my-name {
     margin: auto;
@@ -132,7 +150,8 @@
   }
 
   .resume-btn:hover {
-    background-color: #307fff;;
+    background-color: #307fff;
+    ;
   }
 
   .resume-btn:active {
@@ -150,8 +169,8 @@
   }
 
   .my-image {
-    height: 300px;
-    width: 300px;
+    height: 270px;
+    width: 270px;
     border-radius: 50%;
     margin: auto;
   }
@@ -167,15 +186,4 @@
     width: 100px;
   }
 
-  @media (min-width: $breakpoint-small) {
-
-    .my-image {
-      margin: auto;
-      height: 300px;
-      width: 300px;
-    }
-  }
-
-
-  // Tablet styles...
 }

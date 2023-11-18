@@ -8,13 +8,13 @@ export interface Project {
 }
 
 type Technology =
-  | 'react'
   | 'angular'
+  | 'aws'
+  | 'rxjs'
+  | 'express'
   | 'nodejs'
   | 'sass'
   | 'typescript'
-  | 'rxjs'
-  | 'express'
+  | 'react'
   | 'mongo'
-  | 'aws'
   | 'redux';

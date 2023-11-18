@@ -4,7 +4,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app-root/app.component';
 import { HeaderComponent } from './cmps/header/header.component';
 import { AboutMeComponent } from './cmps/about-me/about-me.component';
-import { HttpClientModule } from '@angular/common/http';
 import { PersonalProjectsComponent } from './cmps/personal-projects/personal-projects.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContactService } from './service/contact.service';
@@ -24,7 +23,6 @@ import { FooterComponent } from './cmps/footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
   ],

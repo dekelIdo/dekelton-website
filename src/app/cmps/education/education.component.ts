@@ -7,12 +7,12 @@ import { Education } from '../../models/education.mode';
 })
 export class EducationComponent implements OnInit {
   constructor() {}
-
+  pageTitle: string = 'My Education'
   educations  : Education[] = [
     {
       title: "Coding Academy",
       imageUrl: "assets/images/coding-academy.png",
-      description: "Graduate of the Coding Academy - 640 hours of an intensive coding Bootcamp. they optimized and improved my performance, and actually this is my first education in development. I learned there how to solution problems of clients and how to get a far perspective of what i see in the browser, and the best thing is that i got a job thank to them.",
+      description: "Graduate of the Coding Academy - 640 hours of an intensive coding Bootcamp. They optimized and improved my performance, and actually this is my first education in development. I learned there how to solve problems of clients and how to get a far perspective of what I see in the browser, and the best thing is that I got a job thank to them.",
     },
     {
       title: "E-square Booster",

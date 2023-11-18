@@ -1,6 +1,6 @@
 <div class="main-container">
   <div class="title">
-    <h2>My Education</h2>
+    <h2>{{ pageTitle }}</h2>
   </div>
   <section class="education-list">
     <section *ngFor="let education of educations" class="education-preview">
@@ -9,7 +9,7 @@
         <p>{{ education.description }}</p>
       </div>
       <div class="bottom-content">
-            <img   class="project-image" [src]='education.imageUrl' />
+        <img class="project-image" [src]="education.imageUrl" />
       </div>
     </section>
   </section>

@@ -8,11 +8,13 @@ import { Link } from '../../models/header.model';
 export class HeaderComponent implements OnInit {
   constructor() {}
 
-  isMobile: boolean = false;
-  mobileNavClass: string = 'mobile-nav show'
+  isMenuOpen: boolean = false;
+  classMenuOpen: string = 'mobile-nav active'
+  classMenuClose: string = 'mobile-nav'
+
   links: Link[] = [
     {
-      routerLink: 'about-me',
+      routerLink: '',
       title: 'About Me',
     },
     {

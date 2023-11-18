@@ -9,7 +9,6 @@
 
     .right-nav {
         display: none;
-
         @media (min-width: $breakpoint-small) {
             display: block;
         }
@@ -45,14 +44,19 @@
             span {
                 color: #fff;
                 margin-right: 8px;
-
                 &:hover {
                     border-bottom: 1px solid #b3b3b3;
                     cursor: pointer;
                 }
             }
         }
-
+        .subtitle{
+            display: none;
+            height: unset;
+            @media (min-width: $breakpoint-medium) {
+                display: block;
+            }         
+        }
         .nav-logo {
             text-decoration: none;
             color: unset;
@@ -62,19 +66,20 @@
             letter-spacing: 1.2px;
             cursor: pointer;
             margin: unset;
+            display: flex;
+            align-items: center;
             span{
                 letter-spacing: 0.5px;
                 font-weight: 400;
             }
             .blue-square {
-                height: 20px;
-                width: 20px;
-                background-color: #0050ff;
+                height: 10px;
+                width: 10px;
+                background-color: $title-blue-color;
                 margin-right: 10px;
                 margin-bottom: 2px;
             }
 
-    
         }
     }
 }
@@ -92,10 +97,11 @@
 .mobile-nav {
     height: 100vh;
     width: 100%;
-    background-color: rgb(230, 218, 206);
+    background-color: rgb(226, 213, 199);
     position: fixed;
     z-index: 10;
-    transition: left 0.3s ease;
+    transition: transform 0.6s ease;
+    transform: translateX(100%);
 
     .right-nav-links {
         display: flex;
@@ -112,11 +118,14 @@
     @media (min-width: $breakpoint-small) {
         display: none;
     }
+
+}
+.active{
+    transform: translateX(0);
 }
 .show{
     right: 0;
 }
-
 .active-link{
     border-bottom: 1px solid #b3b3b3;
 }

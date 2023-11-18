@@ -39,7 +39,7 @@
     margin-block-end: 0;
     color: #0050FF;
     position: absolute;
-    top: 10%;
+    top: 1%;
 
     @media (min-width: $breakpoint-medium) {
       display: Block;
@@ -132,8 +132,7 @@
   }
 
   .resume-btn:hover {
-    background: linear-gradient(to bottom, #304963 5%, #16297e 100%);
-    background-color: #634b30;
+    background-color: #307fff;;
   }
 
   .resume-btn:active {

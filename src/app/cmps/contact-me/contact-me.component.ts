@@ -30,6 +30,7 @@ export class ContactMeComponent implements OnInit, OnDestroy {
       [Validators.required, Validators.email, Validators.minLength(5)],
     ],
     phone: ['', [Validators.required, Validators.pattern(/^[\d\+\-]{8,}$/)]],
+    message: ['', []],
   });
 
   isLoaderActive: boolean = false;

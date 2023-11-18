@@ -10,7 +10,7 @@ export class AboutMeComponent  {
     const resumePath = '../../../assets/files/dekel-resume.pdf'; // Adjust the path to match your actual file location
     const link = document.createElement('a');
     link.href = resumePath;
-    link.download = 'your_resume.pdf'; // You can set the desired name for the downloaded file
+    link.download = 'Dekel-Ido_resume.pdf'; // You can set the desired name for the downloaded file
     link.click();
   }
 }

@@ -29,7 +29,7 @@ export class HeaderComponent implements OnInit {
     },
   ];
 
-  title = ' Dekelton';
+  title = ' Dekel Ido';
   subtitle = '/ Frontend Developer'
   ngOnInit(): void {}
 }

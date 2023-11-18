@@ -1,0 +1,108 @@
+@import '../../../assets/scss-vars/variables.scss';
+
+.app-main-header {
+    .contact-icon {
+        position: absolute;
+        height: 15px;
+        width: 15px;
+    }
+
+    .right-nav {
+        display: none;
+
+        @media (min-width: $breakpoint-small) {
+            display: block;
+        }
+    }
+
+    span {
+        color: #b3b3b3;
+        height: 30px;
+        padding: 5px;
+    }
+
+    button {
+        background-color: unset;
+        color: #fff;
+        border: unset;
+    }
+
+    nav {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #ffff;
+        background-color: #191f24;
+        padding: 0.7rem;
+
+        a {
+            text-decoration: none;
+            color: unset;
+            padding: 5px;
+            font-weight: 400;
+            font-size: 1.2rem;
+            span {
+                color: #fff;
+                margin-right: 8px;
+
+                &:hover {
+                    border-bottom: 1px solid #b3b3b3;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .nav-logo {
+            text-decoration: none;
+            color: unset;
+            padding: 5px;
+            font-weight: 400;
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin: auto;
+
+            @media (min-width: $breakpoint-small) {
+                margin: unset;
+            }
+        }
+    }
+}
+
+.menu-mobile-icon {
+    position: absolute;
+    right: 15px;
+    display: block;
+    cursor: pointer;
+    @media (min-width: $breakpoint-small) {
+        display: none;
+    }
+}
+
+.mobile-nav {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(230, 218, 206);
+    position: fixed;
+    z-index: 10;
+    transition: left 0.3s ease;
+
+    .right-nav-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        font-size: 1.7rem;
+        text-decoration: none;
+        border-bottom: 1px solid;
+        color: #191f24;
+    }
+
+    @media (min-width: $breakpoint-small) {
+        display: none;
+    }
+}
+.show{
+    right: 0;
+}

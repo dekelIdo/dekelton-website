@@ -1,0 +1,16 @@
+<div class="main-container">
+  <div class="title">
+    <h2>My Education</h2>
+  </div>
+  <section class="education-list">
+    <section *ngFor="let education of educations" class="education-preview">
+      <div class="up-content">
+        <h3>{{ education.title }}</h3>
+        <p>{{ education.description }}</p>
+      </div>
+      <div class="bottom-content">
+            <img   class="project-image" [src]='education.imageUrl' />
+      </div>
+    </section>
+  </section>
+</div>

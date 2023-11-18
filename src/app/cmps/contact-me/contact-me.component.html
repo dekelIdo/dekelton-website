@@ -1,0 +1,77 @@
+<div class="main-container">
+  <div class="contact-me-title">Contact Me</div>
+  <form class="main-form" [formGroup]="contactMeForm">
+    <input
+      type="text"
+      placeholder="First Name"
+      aria-label="First Name"
+      matInput
+      formControlName="firstName"
+      class="first-name-input"
+      (input)="capitalizeFirstLetter('firstName')"
+    />
+
+    <div *ngIf="shouldDisplayError('firstName')">
+      <p class="not-valid" *ngIf="contactMeForm.get('firstName')?.hasError('required')">First Name is required</p>
+      <p class="not-valid" *ngIf="contactMeForm.get('firstName')?.hasError('pattern')">First Name must be just Alphabetical</p>
+      <p class="not-valid" *ngIf="contactMeForm.get('firstName')?.hasError('minlength')">First Name must be at least 2 characters</p>
+    </div>
+
+    <input
+      type="text"
+      placeholder="Last Name"
+      aria-label="Last Name"
+      matInput
+      formControlName="lastName"
+      class="last-name-input"
+      (input)="capitalizeFirstLetter('lastName')"
+    />
+
+    <div *ngIf="shouldDisplayError('lastName')">
+      <p class="not-valid" *ngIf="contactMeForm.get('lastName')?.hasError('required')">Last Name is required</p>
+      <p class="not-valid" *ngIf="contactMeForm.get('lastName')?.hasError('pattern')">Last Name must have just Alphabetical</p>
+      <p class="not-valid" *ngIf="contactMeForm.get('lastName')?.hasError('minlength')">Last Name must be at least 2 characters</p>
+    </div>
+
+    <input
+      type="email"
+      placeholder="email@example.com"
+      matInput
+      formControlName="email"
+    />
+    <div *ngIf="shouldDisplayError('email')">
+      <p class="not-valid" *ngIf="contactMeForm.get('email')?.hasError('required')">Email is required</p>
+      <p class="not-valid" *ngIf="contactMeForm.get('email')?.hasError('email')">Invalid email format</p>
+    </div>
+    <input
+      type="text"
+      matInput
+      placeholder="XXX - XXXXXXX"
+      formControlName="phone"
+    />
+    <div *ngIf="shouldDisplayError('phone')">
+      <p class="not-valid" *ngIf="contactMeForm.get('phone')?.hasError('pattern')">Phone number is not valid</p>
+    </div>
+
+    <div class="user-message" *ngIf="isSuccess">
+     Thank you {{username}} your details has been send successfully
+    </div>
+    <img
+      *ngIf="isLoaderActive"
+      class="loader"
+      src="https://v.fastcdn.co/u/430e104e/57579327-0-Loaders-3.svg"
+      alt=""
+    />
+    <button
+      class="submit-btn"
+      (click)="onSubmit()"
+      [disabled]="
+       contactMeForm.invalid
+      "
+      mat-raised-button
+      type="submit"
+    >
+      Submit
+    </button>
+  </form>
+</div>

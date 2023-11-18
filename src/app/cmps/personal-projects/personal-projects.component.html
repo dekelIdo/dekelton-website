@@ -1,0 +1,28 @@
+<div class="title">
+  <h2>My Personal Projects</h2>
+</div>
+<section class="project-list">
+  <section *ngFor="let project of projects" class="project-preview">
+    <div class="left-content">
+      <h3>{{ project.title }}</h3>
+      <a class="link-to-github" href="{{ project.githubLink }}" target="_blank">
+        <img  src="../../../assets/images/github.svg" alt="">
+      </a>
+      <p>{{ project.description }}</p>
+      <div class="technologies">
+        <p>Techs: </p>
+        <span *ngFor="let tech of project.technologies">
+          <img
+            class="tech-img"
+            [src]="'../../../assets/images/' + tech + '.svg'"
+          />
+        </span>
+      </div>
+    </div>
+    <div class="right-content">
+      <a href="{{ project.projectLink }}" target="_blank">
+        <img class="project-image" [src]="project.imageUrl" />
+      </a>
+    </div>
+  </section>
+</section>

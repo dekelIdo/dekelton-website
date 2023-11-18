@@ -1,0 +1,149 @@
+@import '../../../assets/scss-vars/variables.scss';
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    padding-top: 0;
+    height: 40px;
+    margin: auto;
+    background-color: $background-color;
+    letter-spacing: 3px;
+
+    @media (min-width: $breakpoint-small) {
+        padding-top: 24px;
+    }
+}
+
+.project-list {
+    padding: 0.7em;
+    height: unset;
+    background-color: $background-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @media (min-width: $breakpoint-small) {}
+}
+
+.project-preview {
+    position: relative;
+    width: 92%;
+    padding: 10px;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $preview-color;
+    border-radius: 8px;
+    margin: auto;
+    flex-direction: column;
+    margin-bottom: 25px;
+    height: 550px;
+
+    .link-to-github {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        height: 30px;
+        background-color: black;
+        width: min-content;
+        border-radius: 50%;
+        display: flex;
+    }
+
+    .right-content {
+        width: 100%;
+        height: 100%;
+
+        .project-image {
+            height: 95%;
+            width: 100%;
+        }
+
+        @media (min-width: $breakpoint-medium) {
+            width: 60%;
+            height: 350px;
+
+            .project-image {
+                width: 100%;
+            }
+        }
+    }
+
+    .left-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        justify-content: space-around;
+
+        .tech-img {
+            height: 30px;
+            width: 60px;
+        }
+
+        h3 {
+            margin-block-end: 0;
+            margin-block-start: 0;
+            text-align: center;
+            font-size: 1.6rem;
+            color: #0050FF;
+        }
+
+        p {
+            font-size: 1.4rem;
+        }
+
+        @media (min-width: $breakpoint-small) {
+            height: 100%;
+        }
+
+    }
+
+    .technologies {
+        width: 99%;
+        height: 30px;
+        padding: 3px;
+        background-color: #e9e9e9;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+
+        span {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        p {
+            font-weight: 600;
+            display: none;
+            font-size: 1rem
+        }
+
+        @media (min-width: $breakpoint-small) {
+            p {
+                display: block;
+            }
+        }
+    }
+
+    @media (min-width: $breakpoint-small) {
+
+        // Tablet styles...
+        height: 246px;
+        width: 92%;
+        flex-direction: row;
+
+    }
+
+    @media (min-width: $breakpoint-medium) {
+        // Desktop styles...
+        width: 60%;
+        max-width: 1000px;
+        height: 350px;
+    }
+
+}

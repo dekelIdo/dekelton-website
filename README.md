@@ -1,6 +1,6 @@
 # Dekelton
 
-My portfolio Website that i built, containing my CV [Here is my project link](https://dekelton.onrender.com/ "Dekelton link").
+My portfolio website that I built, containing my CV [Here is my project link](https://dekelton.onrender.com/ "Dekelton link").
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.1.
 

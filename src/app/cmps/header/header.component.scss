@@ -57,10 +57,22 @@
             text-decoration: none;
             color: unset;
             padding: 5px;
-            font-weight: 400;
+            font-weight: 600;
             font-size: 1.2rem;
+            letter-spacing: 1.2px;
             cursor: pointer;
             margin: auto;
+            span{
+                letter-spacing: 0.5px;
+                font-weight: 400;
+            }
+            .blue-square {
+                height: 20px;
+                width: 20px;
+                background-color: #0050ff;
+                margin-right: 10px;
+                margin-bottom: 2px;
+            }
 
             @media (min-width: $breakpoint-small) {
                 margin: unset;
@@ -105,4 +117,8 @@
 }
 .show{
     right: 0;
+}
+
+.active-link{
+    border-bottom: 1px solid #b3b3b3;
 }

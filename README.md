@@ -51,7 +51,7 @@ After sending the form the user get a message that the form sent successfully.
 1. Clone the repo
 
    ```sh
-    git clonehttps://github.com/eldadYikne/angulik.git
+    /https://github.com/dekelIdo/dekelton-website.git
 
    ```
 

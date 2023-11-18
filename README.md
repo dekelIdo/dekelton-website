@@ -1,38 +1,47 @@
 # Dekelton
 
+My portfolio Website that i built, containing my CV [Here is my project link](https://dekelton.onrender.com/ "Dekelton link").
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.1.
 
-<img width="937" alt="traveling table" src="https://github.com/dekelIdo/traveling-app-interview/assets/109578899/953b1f41-3103-47c7-85d4-d0028e673c53">
+<img width="937" alt="about-me-page" src="../dekelton//src/assets/images/about-me-page.png">
 
 ## Dekelton Description
-A small Website that was built, which containing my CV and provides the user also send me a message for calling back.
+
+A small responsive website which help you to know me better because its containing my CV and provides the user also send me a message for calling back.
 You can also download my resume in the About page.
 
+## Contact Me page
 
-## Form page
 You can send a form with your details and have to fill the mandatory fields.
-After sending the form the user get a message that the form sent susccessfuly.
+After sending the form the user get a message that the form sent successfully.
 
-<img width="937" alt="form-page" src="https://github.com/dekelIdo/traveling-app-interview/assets/109578899/1ce5de59-ea41-46f9-95c4-a540779d446b">
+<img width="937" alt="form-page" src="../dekelton//src/assets/images/contact-me-page.png">
 
 ### Technologies
+
 - Angular 17
 - Pure SCSS
 - Reactive Form
 - Routing
 
 ## Features
+
 - Contact Me Form
 - Validations of Name, Email, Phone
 - Download File - Resume
-- 
+
 ## Personal Projects Page
+
 - Here you can find my personal project that i done.
 
-<img width="937" alt="form-page" src="https://github.com/dekelIdo/traveling-app-interview/assets/109578899/1ce5de59-ea41-46f9-95c4-a540779d446b">
+<img width="937" alt="form-page" src="../../osa-commerce/dekelton/src/assets/images/personal-projects-page.png>
 
 ## Education page
+
 - Here you will see the courses I have done in the development industry
+
+<img width="937" alt="form-page" src="../../osa-commerce/dekelton/src/assets/images/education-page.png>
 
 ### Installation
 
@@ -52,8 +61,7 @@ After sending the form the user get a message that the form sent susccessfuly.
    ```js
    npm start
    ```
+
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-

@@ -2,26 +2,58 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.1.
 
-## Development server
+<img width="937" alt="traveling table" src="https://github.com/dekelIdo/traveling-app-interview/assets/109578899/953b1f41-3103-47c7-85d4-d0028e673c53">
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Dekelton Description
+A small Website that was built, which containing my CV and provides the user also send me a message for calling back.
+You can also download my resume in the About page.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Form page
+You can send a form with your details and have to fill the mandatory fields.
+After sending the form the user get a message that the form sent susccessfuly.
 
+<img width="937" alt="form-page" src="https://github.com/dekelIdo/traveling-app-interview/assets/109578899/1ce5de59-ea41-46f9-95c4-a540779d446b">
+
+### Technologies
+- Angular 17
+- Pure SCSS
+- Reactive Form
+- Routing
+
+## Features
+- Contact Me Form
+- Validations of Name, Email, Phone
+- Download File - Resume
+- 
+## Personal Projects Page
+- Here you can find my personal project that i done.
+
+<img width="937" alt="form-page" src="https://github.com/dekelIdo/traveling-app-interview/assets/109578899/1ce5de59-ea41-46f9-95c4-a540779d446b">
+
+## Education page
+- Here you will see the courses I have done in the development industry
+
+### Installation
+
+1. Clone the repo
+
+   ```sh
+    git clonehttps://github.com/eldadYikne/angulik.git
+
+   ```
+
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Open the terminal and enter the following line
+
+   ```js
+   npm start
+   ```
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
